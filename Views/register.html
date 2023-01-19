@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <header>
+        <section class="busqueda-logo-container">
+            <div class="logo">
+
+                <a href="../home.html"><img src="img/logo-mercado-liebre.svg" alt="logo mercado-liebre" width="100%"></a>
+    
+            </div>
+            
+            <!-- <span>Lugar para poner barra de búsqueda</span> -->
+            <div class="busqueda">
+                <input type="search" placeholder="Buscar productos, marcas...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+    
+            <!-- <p>Comprá en cuotas y sin tarjeta de crédito</p> -->
+            <div >
+                <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </section>
+        
+        <nav>
+            <ul class="top-list">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="bottom-list">
+                <li><a href="../register.html">Creá tu cuenta<i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="../login.html">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="register">
+            <section class="title-container">
+                <h2>Registro</h2>
+                <hr>
+            </section>
+            <form action="" method="">
+
+                <div class="input-container">
+                    <input class="input-style" type="text" name="name" placeholder="Nombre y apellido">
+                    <span class="error-message">Debe ingresar su nombre y apellido</span>
+                </div>
+
+                <div class="input-container">
+                    <input class="input-style" type="text" name="user-name" placeholder="Nombre de usuario">
+                    <span class="error-message">Debe ingresar su nombre de usuario</span>
+                </div>
+
+                <div class="input-container">
+                    <input class="input-style" type="email" name="email" placeholder="E-mail">
+                    <span class="error-message">Debe ingresar su E-mail correctamete, "user.email@mail.com" </span>
+                </div>
+
+                <div class="input-container">
+                    <label class="input-style-fecha" for="birth" >Fecha de nacimiento</label>
+                    <input class="input-style" type="date" id="birth" name="data-birth">
+                </div>
+
+                <div class="input-container">
+                    <input class="input-style" type="text" name="address" placeholder="Domicilio">
+                </div>
+
+                <div class="user-container">
+                    
+                    <p class="user-profile">Perfil del usuario</p>
+                    <section> 
+                        <div class="buyer-container">
+                            <input class="input-style" type="radio" name="address" id="buyer">
+                            <label for="buyer">Comprador</label>
+                        </div>
+    
+                        <div class="seller-container">
+                            <input class="input-style" type="radio" name="address" id="seller">
+                            <label for="seller">Vendedor</label>
+                        </div>
+                    </section>
+                    
+                </div>
+
+                <div class="user-container">
+                    <p class="title-interest">Categorías de interés</p>
+                    <section class="colum-interesting">
+
+                        <div class="select-container">
+                            <input class="input-style" type="checkbox" class="interest" name="electro" id="electro">
+                            <label for="electro">Electro</label>
+                        </div>
+                        <div class="select-container">
+                            <input class="input-style" type="checkbox" class="interest" name="moda" id="moda">
+                            <label for="moda">Moda</label>
+                        </div>
+                        <div class="select-container">
+                            <input  type="checkbox" class="interest" name="jugueteria" id="jugueteria">
+                            <label for="jugueteria">Juguetería</label>
+                        </div>
+                        <div class="select-container">
+                            <input type="checkbox" class="interest" name="vida-sana" id="vida-sana">
+                            <label for="vida-sana">Vida sana</label>
+                        </div>
+                    </section>
+                    
+                </div>
+                <div class="input-container">
+                    <p>Ingrese su foto de perfil</p>
+                    <input class="users-photo" type="file" name="user-photo" accept=".jpg, .png">
+                </div>
+                <div class="input-container">
+                    <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
+                    <span class="error-message">Debe ingresar su contraseña</span>
+                </div>
+                <div class="input-container">
+                    <input class="input-style" type="password" name="pass2" placeholder="Confirme su contraseña">
+                    <span class="error-message">Debe re-ingresar su contraseña</span>
+                </div>
+                <div class="button-container">
+                    <div class="bottom-sub">
+                        <button type="submit" class="btn btn-submit"><a href="../home.html">Registrarme</a></button>
+                    <span class="error-message">Credenciales inválidas</span>
+                    </div>
+                    <div class="bottom-reset">
+                        <button type="reset" class="btn btn-reset">Borrar</button>
+                    </div>
+                </div> 
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <article>
+                <i class="fa-solid fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con MercadoLiebreCash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-gift"></i>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrado en MercadoLiebre tenés envíos gratis en miles deproductos. Es un beneficio de Mercado Puntos.</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4> 
+                <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </article>
+        </section>
+        <span>Copyright © 1999-2020 MercadoLiebre S.R.L.</span>
+    </footer>
+</body>
+</html>

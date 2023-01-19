@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+:root {
+    /*variables de colores*/
+    --amarillo:#EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris_oscuro: #666;
+    --Gris_claro: #ebebeb;
+    --Verde: #39b54a;
+    /*variables fuentes*/
+    --fuente: 'Roboto', sans-serif;
+    /*tamaños tipograficos*/
+    --parrafo: 12px;
+    --titulo: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripcion: 16px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--amarillo);
+    padding: 13px 0;
+}
+
+/* header div.logo  {
+    width: 50%;
+    
+} */
+header section.busqueda-logo-container div.logo a img {
+    width: 8rem;
+    
+}
+
+header section.busqueda-logo-container div.busqueda {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 18px;
+    margin-right: 0.5rem;
+    
+    margin-left:.5rem;
+}
+header div input {
+    width: 9.5rem;
+    height: 2.2rem;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+}
+header div button {
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 1.5rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+header p {
+    font-size: var(--parrafo);
+    text-align: center;
+    padding-bottom: 18px;
+}
+header section.busqueda-logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+header nav {
+    display: none;
+}
+
+header nav ul li a {
+    font-size: var(--parrafo);
+    
+}
+/* header nav ul.bottom-list {
+    padding-top: 15px;
+}
+header nav ul.bottom-list i {
+    padding-left: 5px;
+} */
+
+header div.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Celeste);
+    border-radius: 5px;
+    color: white;
+    width: 1rem;
+    height: 1rem;
+    padding: 1.1rem;
+    margin: 0 auto;
+}
+header div.burger-menu i {
+    font-size: 1.2rem;
+}
+
+/*MAIN*/
+main{
+    background-color: var(--Gris_claro);
+    padding-bottom: 1rem;
+}
+main section {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+main section.UltimaVisita, section.ofertas {
+    justify-content: center;
+}
+
+main section.title h4 {
+    font-size: var(--titulo);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+main section article:hover{
+    box-shadow : 0px 0px 15px rgb(100, 100, 100);
+}
+main section article {
+    max-width: 250px;
+    border: 1px solid #ebebeb ;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    transition: all 0.5s;
+}
+
+main section article div.infoContainer {
+    padding-top: 5px;
+    margin:0 1rem  1rem 1rem;
+    border-top: 1px solid var(--Gris_claro);
+}
+main section article div.shipping {
+    display: flex;
+    justify-content: flex-end;
+}
+
+main section article div.shipping i{
+    display: flex;
+    border: 1px solid var(--Verde);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: var(--Verde);
+    font-size: 0.8rem;
+    
+    /* display: block ;
+    font-size: 16 px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50 % ;
+    position: absolute ;
+    right: 20 px ;
+    top: -15 px ; */
+}
+.fa-truck-fast:hover {
+    transform: rotate(-90deg);
+}
+.fa-truck-fast {
+    transition: all 0.5s;
+}
+main section article p.price {
+    width: 30%;
+    font-size: var(--precio);
+}
+main section article p.discount {
+    width: 70%;
+    font-size: var(--descuento);
+    color: var(--Verde);
+}
+main section article div.infoContainer p{
+    display: inline;
+}
+
+article :hover  h5 {
+    display: block;
+}
+
+main section article h5 {
+    font-size: var(--descripcion);
+    font-weight: 500;
+    padding-top: 20px ;
+    display: none;
+}
+
+
+/*FOOTER*/
+
+footer {
+    padding: 50px 25px 25px;
+    background-color: white;
+}
+footer p {
+    font-size: var(--parrafo);
+}
+footer article {
+    text-align: center;
+    margin-bottom:  50px;
+}
+footer article i:hover{
+    /* transform: none !important; */
+    color: var(--amarillo);
+}
+footer article i {
+    font-size: 2em;
+    color: var(--Celeste);
+    margin-bottom: 10px;
+}
+
+footer span {
+    font-size: var(--parrafo);
+    
+}
+
+/*media query*/
+/*tablets*/
+@media (min-width: 361px){
+    header section.busqueda-logo-container{
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem; */
+        /* flex-wrap: nowrap; */
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    header section.busqueda-logo-container div.logo a img {
+        width: 10rem;
+        margin: 0 auto;
+        
+    }
+    
+    header section.busqueda-logo-container div.busqueda {
+        position: relative;
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+        
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left:.5rem;
+    }
+    header div input {
+        width:100%;
+        height: 2rem;
+        border: none;
+        border-radius: 5px;
+        background-color: none;
+        border-radius: 5px;
+        padding-left: 0.5rem;
+        outline: none;
+    }
+    header div button {
+        position:relative;
+        border: none;
+        background-color: none;
+        border-radius: 5px;
+        width: 1.5rem;
+        height: 2rem;
+        right: 6%;
+        margin-left: 0;
+    }
+    header section.busqueda-logo-container div p {
+        width: 50%;
+        display: flex;
+        justify-content:start;
+        align-items: flex-start;
+        padding-bottom: 0;
+        width: 250px;
+    }
+    /**/
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    header nav ul{
+        padding-right: 1rem;
+        display: flex;
+    }
+    header nav ul li {
+        padding-left: 1rem;
+    }
+    header nav ul.bottom-list li a i{
+        margin-left: 0.3rem;
+    }
+    header div.burger-menu{
+        display: none;
+    }
+    main section article{
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article:hover{
+        box-shadow : 0px 0px 20px rgb(100, 100, 100);
+    }
+    main section article h5 {
+        display: block;
+    }
+}
+/* desktop */
+@media (min-width: 769px){
+    footer section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* footer p {
+        font-size: var(--parrafo);
+    }*/
+    footer article {
+        padding: 1rem;
+    }
+    /* footer article i {
+        font-size: 2em;
+        color: var(--Celeste);
+        margin-bottom: 10px;
+    } */
+    
+}
+
+@media (min-width: 1024px){
+    header section.busqueda-logo-container div.logo a img {
+        width: 20rem;
+        margin: 0 auto;
+        
+    }
+    header section.busqueda-logo-container{
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem; */
+        /* flex-wrap: nowrap; */
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+/*     header div input {
+        width: 12rem;
+        height: 1.5rem;
+        border: 1px solid black;
+        background-color: none;
+        border-radius: 0;
+        padding-left: 0.5rem;
+    }
+    header div button {
+        width: 1.5rem;
+        height: 1.5rem;
+    }*/
+} 

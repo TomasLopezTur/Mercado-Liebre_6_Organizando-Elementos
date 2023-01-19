@@ -1,0 +1,17 @@
+{
+  "name": "practica-integradora_mercado-liebre_2_agregando-estilos",
+  "version": "1.0.0",
+  "description": "Practica Integradora - Mercado Liebre 2 - Agregando estilos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomas Lopez Turconi - C19",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

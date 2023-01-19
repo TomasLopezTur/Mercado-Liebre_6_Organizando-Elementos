@@ -1,0 +1,138 @@
+
+section.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+main section.register section.title-container {
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 80%;
+}
+span.error-message {
+    color: tomato;
+    font-size: .7rem;
+    display: none;
+}
+input.input-style {
+    border: none;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    padding: 0 0.6rem;
+    font-size: 1rem;
+    /* outline: none; */
+}
+.input-container label.input-style-fecha {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+div.input-container p ,
+div.user-container p {
+    font-weight: bold;
+}
+div.user-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+div.user-container section {
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.colum-interesting {
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin: 1rem 0 2rem 0;
+    gap: 1.5rem;
+}
+div.user-container section div.buyer-container , div.seller-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+div.user-container section div.buyer-container input.input-style,
+div.user-container section div.seller-container input.input-style {
+    margin-right: 0.7rem;
+}
+div.user-container section div.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    height: 1rem;
+}
+div.user-container section div.select-container input {
+    margin-right: 0.7rem;
+}
+
+div.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+div.button-container div.bottom-sub {
+    margin: 1rem;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0,0, 0, 0.2);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    width: 10rem;
+    height: 2.5rem;
+    text-transform: uppercase;
+    background-color: var(--Gris_claro);
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+.btn:hover{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    background-color: rgba(18, 89, 195, 0.5);
+}
+.users-photo{
+    margin-top: 1rem;
+}
+
+/*tablet*/
+@media (min-width: 450px){
+    div.button-container{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 769px){
+    .input-container{
+        width: 100%;
+    }
+    div.user-container {
+        width: 100%;
+    }
+}
