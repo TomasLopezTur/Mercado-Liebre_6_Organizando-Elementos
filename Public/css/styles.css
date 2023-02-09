@@ -213,7 +213,7 @@ main section article div.infoContainer p{
     display: inline;
 }
 
-article :hover  h5 {
+article:hover  h5 {
     display: block;
 }
 
